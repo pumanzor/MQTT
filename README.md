@@ -6,20 +6,23 @@ MQTT (Message Queuing Telemetry Transport) es un protocolo de conectividad para 
 
 El protocolo trabaja sobre TCP/IP e incluye las siguientes caracteristicas:
 
-Transporte de mensajes que es indepediente al contenido de la carga util o payload.
-Tres tipos de QoS para entrega de mensajes
-'At most once' o QoS = 0, donde los mensajes son entregados segun el mejor esfuerzo por lo tanto pueden darse situaciones de perdidas de mensajes. Este nivel puede ser usado por ejemplo; en situaciones en que una lectura individual de datos de un sensor de ambiente se pierde sabiendo que en la proxima se publicara poco despues.
-'At least onde' o QoS =1, donde se asegura que los mensajes llegaran a destino pero duplicados pueden ocurrir.
-'Exactly once' o QoS =3, donde se asegura que los mensajes llegaran a destino exactamente 1 vez. Este nivel podría ser utilizado por ejemplo, con sistemas de facturación donde los mensajes duplicados o perdidos podrían conducir a cargos o cobros incorrectos.
-Overhead pequeño e intercambio de protocolo minimizado para reducir la carga de trafico de red.
-Un mecanismo para notificar a las partes interesadas cuando se produce una desconexión anormal
+- Transporte de mensajes que es indepediente al contenido de la carga util o payload.
+- Tres tipos de QoS para entrega de mensajes
+  * 'At most once' o QoS = 0, donde los mensajes son entregados segun el mejor esfuerzo por lo tanto pueden darse situaciones de perdidas de mensajes. Este nivel puede ser usado por ejemplo; en situaciones en que una lectura individual de datos de un sensor de ambiente se pierde sabiendo que en la proxima se publicara poco despues.
+  * 'At least onde' o QoS =1, donde se asegura que los mensajes llegaran a destino pero duplicados pueden ocurrir.
+  * 'Exactly once' o QoS =3, donde se asegura que los mensajes llegaran a destino exactamente 1 vez. Este nivel podría ser utilizado por ejemplo, con sistemas de facturación donde los mensajes duplicados o perdidos podrían conducir a cargos o cobros incorrectos.
+- Overhead pequeño e intercambio de protocolo minimizado para reducir la carga de trafico de red.
+- Un mecanismo para notificar a las partes interesadas cuando se produce una desconexión anormal
 
 Definiciones importantes
-Mensaje de aplicacion:
+
+- Mensaje de aplicacion:
+
 Son los datos transportador por el protocolo MQTT a travez de la red. Cuando los mensajes de aplicación son transportados por MQTT tienen asociados un QoS y un nombre de tema o 'topic'
 
-Cliente:
-Es un programa o dispositivo que usa MQTT. Un cliente siempre establece una conexion de red y puede:
+- Cliente
+
+  Es un programa o dispositivo que usa MQTT. Un cliente siempre establece una conexion de red y puede:
 
 Publicar mensajes de aplicación que otros clientes pueden estar interesados ​​en el.
 Suscribirse para solicitar un mensaje de aplicación en el que se está interesado en recibir.
