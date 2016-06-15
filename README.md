@@ -18,18 +18,18 @@ Definiciones importantes
 
 - Mensaje de aplicacion:
 
-Son los datos transportador por el protocolo MQTT a travez de la red. Cuando los mensajes de aplicación son transportados por MQTT tienen asociados un QoS y un nombre de tema o 'topic'
+  Son los datos transportador por el protocolo MQTT a travez de la red. Cuando los mensajes de aplicación son transportados por MQTT tienen asociados un QoS y un nombre de tema o 'topic'
 
 - Cliente
 
   Es un programa o dispositivo que usa MQTT. Un cliente siempre establece una conexion de red y puede:
-
-Publicar mensajes de aplicación que otros clientes pueden estar interesados ​​en el.
-Suscribirse para solicitar un mensaje de aplicación en el que se está interesado en recibir.
-Cancelar la suscripción para retirar una solicitud de mensajes de aplicación.
-Desconectarse del servidor.
-Servidor
-Es un programa o dispositivo que actua como intermediario entre clientes que publican mensajes de aplicacion y clientes que han hecho subscripciones, un Servidor puede:
+  
+   * Publicar mensajes de aplicación que otros clientes pueden estar interesados en el.
+   * Suscribirse para solicitar un mensaje de aplicación en el que se está interesado en recibir.
+   * Cancelar la suscripción para retirar una solicitud de mensajes de aplicación.
+   * Desconectarse del servidor.
+- Servidor
+-  Es un programa o dispositivo que actua como intermediario entre clientes que publican mensajes de aplicacion y clientes que han hecho subscripciones, un Servidor puede:
 
 Aceptar conexiones de red desde los clientes
 Aceptar mensajes de aplicacion publicados por los clientes.
