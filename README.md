@@ -1,5 +1,7 @@
 # MQTT
+
 por Pablo Umanzor A.
+
 ###Protocolo MQTT - (Message Queueing Telemetry Transport)
 
 MQTT (Message Queuing Telemetry Transport) es un protocolo de conectividad para sistemas M2M, su funcionamiento se basa en mensajes publish/subscribe extremadamente simple y liviano, fue diseñado para dispositivos que funcionan con restricciones de ancho de banda, alta latencia o redes poco confiables, dado lo anterior dentro de sus caracteristicas implementa un cierto grado de garantia en la entrega de los mensajes.
